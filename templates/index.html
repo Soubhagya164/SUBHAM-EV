@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SUBHAM EV - TRANS MOBILITY. Explore electric scooters, book a test ride and contact our showroom.">
+    <title>SUBHAM EV | TRANS MOBILITY</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <a href="#home" class="brand">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="SUBHAM EV logo">
+            <span>
+                <strong>SUBHAM EV</strong>
+                <small>TRANS MOBILITY</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#vehicles">Our EVs</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#test-ride" class="nav-cta">Book Test Ride</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="hero-content">
+                <span class="eyebrow">⚡ SMART • CLEAN • ELECTRIC</span>
+                <h1>Move into the <span>electric future.</span></h1>
+                <p>
+                    Discover stylish, efficient and practical electric mobility
+                    at <strong>SUBHAM EV</strong> — your trusted destination for
+                    next-generation electric scooters.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#vehicles" class="btn btn-primary">Explore EVs</a>
+                    <a href="#test-ride" class="btn btn-outline">Book a Test Ride</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div><strong>100%</strong><span>Electric</span></div>
+                    <div><strong>Low</strong><span>Running Cost</span></div>
+                    <div><strong>Smart</strong><span>Mobility</span></div>
+                </div>
+            </div>
+             <div class="hero-visual">
+
+    <div class="visual-ring"></div>
+
+    <div class="scooter-card">
+
+        <span class="vehicle-label">
+            ⚡ OUR ELECTRIC SCOOTERS
+        </span>
+
+        <img
+            src="{{ url_for('static', filename='images/scooters.png') }}"
+            alt="SUBHAM EV Electric Scooters"
+            class="hero-scooters"
+        >
+
+        <div class="vehicle-caption">
+            <h3>Electric Mobility</h3>
+            <p>Choose your ride. Power your future.</p>
+        </div>
+
+    </div>
+
+    <div class="floating-badge">
+        🔋 Efficient
+        <br>
+        <span>Electric Mobility</span>
+    </div>
+
+</div>
+            <!-- <div class="hero-visual">
+                <div class="visual-ring"></div>
+                <div class="scooter-card">
+                    <div class="temporary-label">YOUR SCOOTER PHOTO HERE</div>
+                    <div class="scooter-graphic">
+                        <div class="handle"></div>
+                        <div class="body"></div>
+                        <div class="seat"></div>
+                        <div class="wheel wheel-left"></div>
+                        <div class="wheel wheel-right"></div>
+                    </div>
+                    <p>Electric Scooter</p>
+                      <img src="{{ url_for('static', filename='images/hero-scooter.png') }}"
+                      alt="SUBHAM EV Electric Scooter"class="hero-scooter">  
+                </div>
+                <div class="floating-badge">🔋 Efficient<br><span>Electric Mobility</span></div>
+            </div> -->
+        </section>
+
+        <section class="section" id="vehicles">
+            <div class="section-heading">
+                <span class="eyebrow">OUR RANGE</span>
+                <h2>Explore Our <span>EVs</span></h2>
+                <p>Available in multiple variants with Lithium-ion and lead-acid batteries.</p>
+            </div>
+
+            <div class="vehicle-carousel">
+
+    <button class="carousel-btn prev" id="prevVehicle">
+        &#10094;
+    </button>
+
+    <div class="vehicle-grid" id="vehicleGrid">
+
+        <article class="vehicle-card">
+           <div class="vehicle-image">
+           <img src="{{ url_for('static', filename='images/rider.png') }}" alt="SUBHAM EV RIDER Electric Scooter">
+               <span class="vehicle-badge">RIDER</span>
+           </div>
+           <div class="vehicle-info">
+           <span class="tag">ELECTRIC SCOOTER</span>
+                <h3>RIDER</h3>
+                <p>Smart, stylish and economical electric scooter
+            for everyday riding.</p>
+
+             <div class="vehicle-specs">
+
+             <div>
+                <strong>80–100</strong>
+                <small>KM RANGE</small>
+             </div>
+
+             <div>
+                <strong>50</strong>
+                <small>KM/H</small>
+             </div>
+
+             <div>
+                <strong>₹50K,63K</strong>
+                <small>PRICE</small>
+             </div>
+
+            </div>
+
+                <a href="#test-ride" class="text-link">
+                    Book a Test Ride →
+                </a>
+            </div>
+        </article>
+
+
+        <article class="vehicle-card">
+            <div class="vehicle-image">
+               <img src="{{ url_for('static', filename='images/riderpro.png') }}" alt="SUBHAM EV RIDER PRO Electric Scooter">
+               <span class="vehicle-badge">RIDER PRO</span>
+           </div>
+           <div class="vehicle-info">
+           <span class="tag">ELECTRIC SCOOTER</span>
+                <h3>RIDER PRO</h3>
+                <p>Smart, stylish and economical electric scooter
+            for everyday riding.</p>
+
+            <div class="vehicle-specs">
+
+             <div>
+                <strong>80–100</strong>
+                <small>KM RANGE</small>
+             </div>
+
+             <div>
+                <strong>55</strong>
+                <small>KM/H</small>
+             </div>
+
+             <div>
+                <strong>₹52K,65K</strong>
+                <small>PRICE</small>
+             </div>
+
+                <a href="#test-ride" class="text-link">
+                    Book a Test Ride →
+                </a>
+            </div>
+        </article>
+
+
+        <article class="vehicle-card">
+            <div class="vehicle-image">
+               <img src="{{ url_for('static', filename='images/grace pro.png') }}" alt="SUBHAM EV RIDER PRO Electric Scooter">
+               <span class="vehicle-badge">GRACE PRO</span>
+            </div>
+
+            <div class="vehicle-info">
+                <span class="tag">PREMIUM EV</span>
+                <h3>GRACE PRO</h3>
+                <p>Double head lights and stylish with performance.</p>
+
+                <div class="vehicle-meta">
+                    <span>⚡ Performance</span>
+                    <span>🛵 Stylish</span>
+                </div>
+                <div class="vehicle-specs">
+
+             <div>
+                <strong>80–100</strong>
+                <small>KM RANGE</small>
+             </div>
+
+             <div>
+                <strong>50-60</strong>
+                <small>KM/H</small>
+             </div>
+
+             <div>
+                <strong>₹52K</strong>
+                <small>PRICE</small>
+             </div>
+                <a href="#test-ride" class="text-link">
+                    Book a Test Ride →
+                </a>
+             </div>
+        </article>
+
+
+        <!-- ADD MORE VEHICLES HERE -->
+
+        <article class="vehicle-card">
+            <div class="vehicle-image">
+               <img src="{{ url_for('static', filename='images/chetan.png') }}" alt="SUBHAM EV CHETAN Electric Scooter">
+               <span class="vehicle-badge">CHETAN</span>
+            </div>
+
+            <div class="vehicle-info">
+                <span class="tag">NEW</span>
+                <h3>CHETAN</h3>
+                <p>New generation electric scooter with strong build quality.</p>
+
+                <div class="vehicle-meta">
+                    <span>🔋 High Range</span>
+                    <span>⚡ Fast Charging</span>
+                </div>
+                 <div class="vehicle-specs">
+
+             <div>
+                <strong>80–100</strong>
+                <small>KM RANGE</small>
+             </div>
+
+             <div>
+                <strong>60-65</strong>
+                <small>KM/H</small>
+             </div>
+
+             <div>
+                <strong>₹65K,80K</strong>
+                <small>PRICE</small>
+             </div>
+
+            </div>
+                <a href="#test-ride" class="text-link">
+                    Book a Test Ride →
+                </a>
+            </div>
+        </article>
+
+
+        <article class="vehicle-card">
+            <div class="vehicle-image">
+               <img src="{{ url_for('static', filename='images/topper.png') }}" alt="SUBHAM EV TOPPER Electric Scooter">
+               <span class="vehicle-badge">TOPPER</span>
+            </div>
+
+            <div class="vehicle-info">
+                <span class="tag">PREMIUM</span>
+                <h3>TOPPER</h3>
+                <p>Premium electric mobility.</p>
+
+                <div class="vehicle-meta">
+                    <span>⚡ Powerful</span>
+                    <span>🔋 Long Range</span>
+                </div>
+                 <div class="vehicle-specs">
+
+             <div>
+                <strong>80–100</strong>
+                <small>KM RANGE</small>
+             </div>
+
+             <div>
+                <strong>50</strong>
+                <small>KM/H</small>
+             </div>
+
+             <div>
+                <strong>₹65K</strong>
+                <small>PRICE</small>
+             </div>
+
+            </div>
+                <a href="#test-ride" class="text-link">
+                    Book a Test Ride →
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+    <button class="carousel-btn next" id="nextVehicle">
+        &#10095;
+    </button>
+
+</div>
+        </section>
+
+        <section class="benefits">
+            <div class="section-heading light">
+                <span class="eyebrow">THE EV ADVANTAGE</span>
+                <h2>Why choose <span>electric?</span></h2>
+            </div>
+
+            <div class="benefit-grid">
+                <div class="benefit"><div class="icon">₹</div><h3>Lower Running Cost</h3><p>Save more on everyday commuting with efficient electric mobility.</p></div>
+                <div class="benefit"><div class="icon">⚡</div><h3>Instant Performance</h3><p>Enjoy smooth and responsive electric acceleration.</p></div>
+                <div class="benefit"><div class="icon">🌱</div><h3>Cleaner Mobility</h3><p>Choose a cleaner way to move around your city.</p></div>
+                <div class="benefit"><div class="icon">🔧</div><h3>Easy Maintenance</h3><p>Electric vehicles have fewer moving parts than conventional engines.</p></div>
+            </div>
+        </section>
+
+        <section class="section why-section" id="why-us">
+            <div class="about-grid">
+                <div class="about-logo-card">
+                    <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="SUBHAM EV logo">
+                    <div>
+                        <strong>SUBHAM EV</strong>
+                        <span>TRANS MOBILITY</span>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="eyebrow">WHY SUBHAM EV</span>
+                    <h2>A showroom built around <span>your journey.</span></h2>
+                    <p>
+                        At SUBHAM EV, our goal is to make electric mobility simple,
+                        practical and accessible. From choosing the right scooter
+                        to after-sales support, we want to make every step easier.
+                    </p>
+
+                    <div class="check-list">
+                        <div>✓ Friendly vehicle guidance</div>
+                        <div>✓ Test ride assistance</div>
+                        <div>✓ Transparent information</div>
+                        <div>✓ Service and support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="showroom-banner" id="about">
+            <div>
+                <span class="eyebrow">ABOUT OUR SHOWROOM</span>
+                <h2>Your next ride starts <span>here.</span></h2>
+                <p>Upload your real showroom photo later and we can turn this into a full showroom gallery.</p>
+            </div>
+            <a href="#contact" class="btn btn-light">Visit / Contact Us</a>
+        </section>
+
+        <section class="section test-section" id="test-ride">
+            <div class="section-heading">
+                <span class="eyebrow">GET ON THE ROAD</span>
+                <h2>Book a <span>Test Ride</span></h2>
+                <p>Fill in your details and our team can contact you.</p>
+            </div>
+
+            <form class="enquiry-form" id="testRideForm" action="/submit-enquiry" method="POST">
+                <div class="form-row">
+                    <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+                    <label>Phone<input type="tel" name="phone" placeholder="10-digit mobile number" required></label>
+                </div>
+                <div class="form-row">
+                    <label>Choose EV
+                        <select name="vehicle">
+                            <option>RIDER</option>
+                            <option>RIDER PRO</option>
+                            <option>GRACE PRO</option>
+                            <option>CHETAN</option>
+                            <option>TOPPER</option>
+                            
+                            <!-- <option>SUBHAM EV Model 01</option>
+                            <option>SUBHAM EV Model 02</option>
+                            <option>SUBHAM EV Model 03</option> -->
+                        </select>
+                    </label>
+                    <label>Preferred Date<input type="date" name="date"></label>
+                </div>
+                <label>Message<textarea name="message" rows="4" placeholder="Tell us what you would like to know..."></textarea></label>
+                <button class="btn btn-primary" type="submit">Send Enquiry</button>
+                <p class="form-message" id="formMessage"></p>
+            </form>
+        </section>
+
+        <section class="contact" id="contact">
+            <div>
+                <span class="eyebrow">CONTACT SUBHAM EV</span>
+                <h2>Let's talk about your <span>next ride.</span></h2>
+                <!-- <p>Replace the sample details below with your showroom's real contact information.</p> -->
+            </div>
+
+            <div class="contact-cards">
+                <a href="tel:+917978645602"><strong>📞 Call Us</strong><span>+91 7978645602</span></a>
+                <a href="mailto:subhamevtm@gmail.com"><strong>✉️ Email</strong><span>subhamevtm@gmail.com</span></a>
+                <div><strong>📍AT-PANASPADA,BRAHMAGIRI,PURI,752011</strong><span>address</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <div class="social-links">
+
+    <a href="https://www.instagram.com/subhamev?igsi=YjJ0MGl1ZXRiOWlj"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+
+        <img src="{{ url_for('static', filename='images/instagram.png') }}"
+             alt="Instagram">
+
+    </a>
+
+
+    <a href="YOUR_FACEBOOK_LINK"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Facebook">
+
+        <img src="{{ url_for('static', filename='images/facebook.png') }}"
+             alt="Facebook">
+
+    </a>
+
+
+    <a href="https://wa.me/917978645602"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="WhatsApp">
+
+        <img src="{{ url_for('static', filename='images/whatsapp.png') }}"
+             alt="WhatsApp">
+
+    </a>
+
+
+    <a href="YOUR_YOUTUBE_LINK"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="YouTube">
+
+        <img src="{{ url_for('static', filename='images/youtube.png') }}"
+             alt="YouTube">
+
+    </a>
+
+</div>
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+</div>
+               <div class="footer-brand">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="SUBHAM EV logo">
+            <div><strong>SUBHAM EV</strong><small>TRANS MOBILITY</small></div>
+        </div>
+        <p>© 2026 SUBHAM EV – TRANS MOBILITY. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
